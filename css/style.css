@@ -1,9 +1,101 @@
 /* CSS for Google homepage project */
 
 body {
-	font-family: arial, sans-serif;
+  font-family: arial, sans-serif;
+  font-size: 100%;
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+}
+
+#header ul {
+	float: right;
+}
+#header li {
+	color: rgb(117,117,117);
+	display: block;
+	box-sizing: border-box;
+	font-size: 0.8em;
+	text-align: center;
+	float: left;
+	width: 65px;
+	height: 30px;
+	padding-top: 10px;
+	margin: 10px 10px;
+}
+
+#header #sign-in {
+	background-color: #4285f4;
+	color: #eee;
 }
 
 #content {
-	text-align: center;
+  text-align: center;
+  margin-top: 200px;
+}
+
+input[type="text"] {
+  width: 600px;
+  height: 40px;
+  margin-top: 20px;
+  border: 0.5px solid rgba(0,0,0,0.05);
+  -webkit-box-shadow: 2px 2px 11px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 11px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 11px -5px rgba(0, 0, 0, 0.75);
+  background: url("images/microphone.png");
+}
+
+input[type="submit"] {
+	width: 140px;
+	height: 35px;
+	/*margin-top: 35px;*/
+	color: rgb(117,117,117);
+	background-color: rgb(241,241,241);
+	font-weight: bold;
+	font-size: .8em;
+	border-style: none;
+}
+
+#search {
+	width: 600px;
+	margin: 0 auto;
+}
+#search img {
+	width: 14px;
+}
+#mic {
+	display: block;
+	position: relative;
+	top: -30px;
+	left: 570px;
+
+}
+
+#footer {
+	background-color: rgb(242,242,242);
+	border-top: 0.5px solid rgba(0,0,0,0.05);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 40px;}
+
+#footer #left-footer {
+	padding-left: 15px;
+}
+
+#footer #right-footer {
+	float: right;
+	padding-right: 15px;
+}
+
+#footer li {
+	display: inline;
+	float: left;
+	color: rgb(117,117,117);
+	font-size: 0.8em;
+	margin: 14px 15px;
 }
